@@ -1,0 +1,9 @@
+project: savantenvs/sqlglot
+target: fuzz-lang
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-lang/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-lang
+    libfuzzer: true
+    timeout: 30

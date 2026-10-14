@@ -1,0 +1,1 @@
+	SELECT e.id, f.value FROM events AS e, LATERAL FLATTEN(payload) AS f
